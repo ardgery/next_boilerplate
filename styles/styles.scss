@@ -1,0 +1,204 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+
+/*=================== KEYFRAMES ===================*/
+@include fadeKeyframes;
+/*=================== BODY ===================*/
+body{
+	font-family: Arial, Geneva, sans-serif;
+	color:$mainBlack;
+}
+
+/*=================== HEADER CLASS ===================*/
+.header{
+    background:$mainRed;
+    padding:10px 15px;
+
+    input{
+        width:100%;
+        border:none;
+        border-radius:5px;
+        padding: 10px 0 10px 32px;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box;    
+        background-image: url("../images/search.svg");
+        background-repeat: no-repeat;
+        background-position: 10px center;
+        background-size: 15px 15px;
+    }
+}
+
+/*=================== BODY CLASS ===================*/
+.body{
+	position:relative;
+    padding:5px;
+    
+    h1{
+        font-size:$headingFont;
+        font-weight:bold;
+        margin: 10px 0 30px 10px;
+    }
+    span{
+        font-size:$semiFont;
+        font-weight:normal;
+        color:$mainGrey;
+    }
+    .logo{
+        width:60%;
+        vertical-align: middle;
+    }
+    .col{
+        float:left;
+        width:50%;
+        margin-bottom:30px;
+        @media (min-width:$breakTablet)  {
+            width:25%;
+        }
+    }
+    .sort{
+        color:$mainGrey;
+        font-size:$miniFont;
+        text-align:right;
+        margin-right: 13px;	
+        cursor:pointer;
+    }
+    .dropDown{
+        color:$mainBlack;	
+        font-size:$miniFont;
+    }
+    .dropdownListWrap{
+        position:relative;
+        margin-bottom:20px;
+    }
+    .dropdownList{
+        position:absolute;
+        right:15px;
+        top:22px;
+        background:#fff;
+        padding:8px 15px;
+        @include boxShadow;
+        z-index:99;
+
+        p{
+            padding:7px 0;
+            color:$mainBlack;
+            font-size:$normalFont;
+            cursor:pointer;
+        }
+        p.active{
+            font-weight: bold;
+        }
+    }
+    .arrowDown{
+        width: 10px;
+    }
+    .colInside{
+        margin:0 4%;
+    }
+    .productImage{
+        font-size:$advanceFont;
+        font-weight:normal;
+        width:100%;
+        opacity:1;
+
+        &:hover{
+            -webkit-animation-name: fade; /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+            animation-name: fade;
+            animation-duration: 0.5s;
+        }
+    }
+    .productTitle{
+        font-size: $miniFont;
+        font-weight:bold;
+        margin: 5px 0 10px 0;
+        height: 13px;
+        overflow: hidden;
+        @include mediaMiniFont;
+    }
+    .productDesc{
+        font-size:$miniFont;
+        color:$mainGrey;
+        line-height: 17px;
+        height: 35px;
+        overflow: hidden;
+        @media (min-width:$breakPhoneLandscape)  {
+            font-size:$semiFont;
+            height:16px;
+        }
+        @media (min-width:$breakTablet)  {
+            font-size:$normalFont;
+            height: 42px;
+            line-height: 19px;
+        }
+    }
+    .realPrize{
+        font-size:$normalFont;
+        font-weight:bold;
+        margin: 8px 0 5px 0;
+        height: 14px;
+        overflow: hidden;
+        @media (min-width:$breakPhoneLandscape)  {
+            font-size:$largeFont;
+            height:$largeFont;
+        }
+        @media (min-width:$breakTablet)  {
+            font-size:$largeFont;
+            height:$largeFont;
+        }
+    }
+    .prize{
+        font-size:$miniFont;
+        color:$mainGrey;
+        text-decoration:line-through;
+        height: 14px;
+        overflow: hidden;
+        @include mediaMiniFont;
+    }
+    .colWrapper{
+        @include clearFloat;
+    }
+    .loadingScrollWrap{
+        width:100%;
+        .loadingScroll{
+            display:block;
+            margin:0 auto;
+            width:50px;
+        }
+    }
+    .notFound{
+        position:relative;
+        text-align: center;
+    }
+    .notFoundWrap{
+        position:absolute;
+        top:0;left:0;bottom:0;right:0;
+        margin:auto;
+        height: 55%;
+    }
+    .notFoundWrap{
+        h1.sorry{
+            font-size:$headingSmall;
+            margin:25px 0 25px 0;
+            font-weight:bold;  
+        }
+    }
+    .notFoundWrap{
+        img{
+            width:130px;
+        }
+    }
+    .notFoundWrap{
+        p{
+            font-size: $semiFont;
+            line-height: 18px;
+            color:#949494;
+        }
+    }
+    .loadingGif{
+        vertical-align: middle;
+        width:40px;
+    }
+}

@@ -1,0 +1,221 @@
+/*=================== RESET ===================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/*=================== VARIABLES ===================*/
+/*==== COLORS ====*/
+/*==== FONT-SIZES ====*/
+/*==== MEDIA QUERIES BREAK ====*/
+/*=================== KEYFRAMES ===================*/
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+/* Standard syntax */
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+/*=================== BODY ===================*/
+body {
+  font-family: Arial, Geneva, sans-serif;
+  color: #191919; }
+
+/*=================== HEADER CLASS ===================*/
+.header {
+  background: #eb0029;
+  padding: 10px 15px; }
+  .header input {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0 10px 32px;
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    background-image: url("../images/search.svg");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 15px 15px; }
+
+/*=================== BODY CLASS ===================*/
+.body {
+  position: relative;
+  padding: 5px; }
+  .body h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0 30px 10px; }
+  .body span {
+    font-size: 13px;
+    font-weight: normal;
+    color: #949494; }
+  .body .logo {
+    width: 60%;
+    vertical-align: middle; }
+  .body .col {
+    float: left;
+    width: 50%;
+    margin-bottom: 30px; }
+    @media (min-width: 801px) {
+      .body .col {
+        width: 25%; } }
+  .body .sort {
+    color: #949494;
+    font-size: 12px;
+    text-align: right;
+    margin-right: 13px;
+    cursor: pointer; }
+  .body .dropDown {
+    color: #191919;
+    font-size: 12px; }
+  .body .dropdownListWrap {
+    position: relative;
+    margin-bottom: 20px; }
+  .body .dropdownList {
+    position: absolute;
+    right: 15px;
+    top: 22px;
+    background: #fff;
+    padding: 8px 15px;
+    -moz-box-shadow: 0px 3px 8px #646464;
+    -webkit-box-shadow: 0px 3px 8px #646464;
+    box-shadow: 0px 3px 8px #646464;
+    z-index: 99; }
+    .body .dropdownList p {
+      padding: 7px 0;
+      color: #191919;
+      font-size: 14px;
+      cursor: pointer; }
+    .body .dropdownList p.active {
+      font-weight: bold; }
+  .body .arrowDown {
+    width: 10px; }
+  .body .colInside {
+    margin: 0 4%; }
+  .body .productImage {
+    font-size: 16px;
+    font-weight: normal;
+    width: 100%;
+    opacity: 1; }
+    .body .productImage:hover {
+      -webkit-animation-name: fade;
+      /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 0.5s;
+      /* Safari 4.0 - 8.0 */
+      animation-name: fade;
+      animation-duration: 0.5s; }
+  .body .productTitle {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px 0 10px 0;
+    height: 13px;
+    overflow: hidden; }
+    @media (min-width: 481px) {
+      .body .productTitle {
+        font-size: 13px;
+        height: 16px; } }
+    @media (min-width: 801px) {
+      .body .productTitle {
+        font-size: 14px;
+        height: 14px; } }
+  .body .productDesc {
+    font-size: 12px;
+    color: #949494;
+    line-height: 17px;
+    height: 35px;
+    overflow: hidden; }
+    @media (min-width: 481px) {
+      .body .productDesc {
+        font-size: 13px;
+        height: 16px; } }
+    @media (min-width: 801px) {
+      .body .productDesc {
+        font-size: 14px;
+        height: 42px;
+        line-height: 19px; } }
+  .body .realPrize {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 8px 0 5px 0;
+    height: 14px;
+    overflow: hidden; }
+    @media (min-width: 481px) {
+      .body .realPrize {
+        font-size: 15px;
+        height: 15px; } }
+    @media (min-width: 801px) {
+      .body .realPrize {
+        font-size: 15px;
+        height: 15px; } }
+  .body .prize {
+    font-size: 12px;
+    color: #949494;
+    text-decoration: line-through;
+    height: 14px;
+    overflow: hidden; }
+    @media (min-width: 481px) {
+      .body .prize {
+        font-size: 13px;
+        height: 16px; } }
+    @media (min-width: 801px) {
+      .body .prize {
+        font-size: 14px;
+        height: 14px; } }
+  .body .colWrapper:after {
+    content: "";
+    clear: both;
+    display: table; }
+  .body .loadingScrollWrap {
+    width: 100%; }
+    .body .loadingScrollWrap .loadingScroll {
+      display: block;
+      margin: 0 auto;
+      width: 50px; }
+  .body .notFound {
+    position: relative;
+    text-align: center; }
+  .body .notFoundWrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 55%; }
+  .body .notFoundWrap h1.sorry {
+    font-size: 20px;
+    margin: 25px 0 25px 0;
+    font-weight: bold; }
+  .body .notFoundWrap img {
+    width: 130px; }
+  .body .notFoundWrap p {
+    font-size: 13px;
+    line-height: 18px;
+    color: #949494; }
+  .body .loadingGif {
+    vertical-align: middle;
+    width: 40px; }
+
+/*# sourceMappingURL=styles.css.map */
