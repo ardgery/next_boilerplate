@@ -33,7 +33,7 @@ const MainContent = () => {
     return (
         <main className={styles.main}>
             <h1 className={styles.title}>
-                Welcome to <a href="https://nextjs.org">Next.js!</a>
+                Welcome to Portfolio Gery!!
             </h1>
             <p>{state.generalStates.count}</p>
             <button onClick={() => { actions.generalActions.increment(); }}>
